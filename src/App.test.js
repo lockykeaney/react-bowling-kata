@@ -1,23 +1,13 @@
 import React from 'react';
 import App from './App';
-import {shallow, mount} from 'enzyme';
-import ScoreBoard from './ScoreBoard';
-import RollButtons from './RollButtons';
+
+import { render, screen } from '@testing-library/react';
 
 function setup() {
-  return shallow(<App />);
+  return render(<App />);
 }
 
 it('renders without crashing', () => {
-  shallow(<App />);
-});
-
-it('renders a ScoreBoard component', () => {
-  const wrapper = setup();
-  expect(wrapper.find(ScoreBoard)).toBeDefined();
-});
-
-it('renders a RollButtons component', () => {
-  const wrapper = setup();
-  expect(wrapper.find(RollButtons)).toBeDefined();
+  render(<App />);
+  expect(screen.getAllByTestId('App').length(45)).toBeTruthy();
 });
