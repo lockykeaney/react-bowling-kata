@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 const Roll = ({ number }) => <button type="button">{number}</button>;
 
