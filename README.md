@@ -28,6 +28,18 @@ As it is they have a list of requirements ready:
   balls to complete the frame. However no more than three balls can be rolled in
   tenth frame.
 
+1. A Game is the entire score (Scoreboard)
+2. A Game is made up of 10 Frames
+3. A Frame has 1 or 2 Rolls
+   1. A Frame starts with 10 pins standing up. Each roll can knock down between 0 and 10 pins.
+   2. A spare is 10 in 2 rolls, a bonus is added from the first roll of the next frame. **************\*\*\***************If the first roll of the next frame is a 5, the score of the spare frame is 15**************\*\*\***************
+   3. A strike is 10 in 1 roll, a bonus is added from the next 2 rolls. ******\*\*\*\*******If the next 2 rolls get a total of 8, the score of the strike frame is 18******\*\*\*\*******
+4. The tenth Frame has 2 or 3 rolls (different from all other frames)
+   1. If a strike or a spare is rolled, an extra ball can be rolled to finish complete the frame.
+   2. No more than 3 rolls
+5. A Roll will knock down a number of pins and remove them from the frame
+6. The Scoreboard iterates through frames to calculate the score
+
 ## Scripts used in project
 
 In the project directory, you can run:
