@@ -9,5 +9,5 @@ function setup() {
 
 it('renders without crashing', () => {
   render(<App />);
-  expect(screen.getAllByTestId('App').length(45)).toBeTruthy();
+  expect(screen.getByText('Welcome to React Bowling')).toBeInTheDocument();
 });
