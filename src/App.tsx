@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import RollBoard from './RollButtons';
-import ScoreBoard from './ScoreBoard';
-
 class App extends Component {
   render() {
     return (
@@ -12,8 +9,16 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React Bowling</h2>
         </div>
-        <RollBoard />
-        <ScoreBoard />
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
+        <div data-testid="frame"></div>
       </div>
     );
   }
